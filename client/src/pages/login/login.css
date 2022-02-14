@@ -1,0 +1,141 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.register-link {
+    text-decoration: none;
+    color: #233975;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: url("https://res.cloudinary.com/immeraj/image/upload/v1642449667/undraw_login_re_4vu2_yuffd9.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.login-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+.login-left .login-copy-left {
+    color: black;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.login-copy-left h1 {
+    margin-bottom: 15px;
+}
+
+.link-container > p {
+    margin: 20px 0;
+}
+
+.text-left {
+    font-weight: 400;
+}
+
+.login-right .login-copy-right {
+    color: black;
+    text-align: center;
+}
+
+.login-right,
+.text-right {
+    font-size: 0.875rem;
+}
+
+.login-form {
+    width: 328px;
+}
+
+.input-username,
+.input-password {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25em;
+    font-size: 0.875rem;
+}
+
+.login-username, .login-password {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 0.75rem;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    background: #233975;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #2c4893;
+}
+
+@media screen and (min-width: 900px) {
+    .login-container {
+        flex-direction: row;
+        height: calc(100vh - 80px);
+    }
+
+    .login-left {
+        display: flex;
+        height: auto;
+        width: 50%;
+    }
+
+    .login-right {
+        display: flex;
+        height: auto;
+        width: 50%;
+    }
+}
